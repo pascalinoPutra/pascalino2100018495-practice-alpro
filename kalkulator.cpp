@@ -1,6 +1,7 @@
 #include<iostream>
 #include<windows.h>
 #include<fstream>
+#include<conio.h>
 #include"function.h"
 using namespace std;
 void gotoxy(int x,int y)
@@ -18,7 +19,7 @@ int main()
 	gotoxy(0,5);cout<<" =======================================================";
 	gotoxy(0,6);cout<<"|                                                       |";
 	gotoxy(0,7);cout<<" ------------------------------------------------------- ";
-	gotoxy(18,6);cout<<"WELCOME IN CALCULATOR";
+	gotoxy(18,6);cout<<"SELAMAT DATANG DI CALCULATOR";
 	for(int i=1;i<6;i++)
 	{
 		gotoxy(0,7+i);cout<<"|                                                       |";
@@ -73,6 +74,6 @@ int main()
 	{
 		gotoxy(1,14);cout<<"T E R I M A  K A S I H";
 	}
-	
+	getch();
 	return 0;
 }
